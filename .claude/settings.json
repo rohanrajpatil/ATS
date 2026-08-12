@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import numpy, scipy; print\\(numpy.__version__, scipy.__version__\\)\")",
+      "Bash(time python3 biased_teacher_hub.py)",
+      "Bash(python3 -m py_compile biased_teacher_hub.py)",
+      "Bash(python3 -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "Bash(python3 -m py_compile benchmark_biased_ats.py)",
+      "Bash(time python3 -)",
+      "Bash(python3 -)",
+      "Bash(time python3 benchmark_biased_ats.py)",
+      "Bash(grep \"python3 -$\")",
+      "Bash(python3 -c ' *)",
+      "Bash(tee /tmp/claude-1000/-home-rohanraj-replications-ATS/cfa9e0ee-0b28-4c7d-932b-addc614bccae/scratchpad/full_run.log)"
+    ]
+  }
+}
